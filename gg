@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заброшенные места — Исследование прошлого</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">URBEX<span>EXPLORE</span></div>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#cities">Города</a>
+            <a href="#about">О проекте</a>
+        </nav>
+    </header>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Эстетика увядания</h1>
+            <p>Исследуйте тайны забытых и заброшенных локаций по всей стране.</p>
+            <a href="#cities" class="btn">Выбрать город</a>
+        </div>
+    </section>
+
+    <!-- Раздел с городами -->
+    <section id="cities" class="cities-section">
+        <h2>Каталог по городам</h2>
+        
+        <!-- Кнопки переключения городов -->
+        <div class="city-tabs">
+            <button class="tab-btn active" onclick="filterCity('all')">Все</button>
+            <button class="tab-btn" onclick="filterCity('moscow')">Москва</button>
+            <button class="tab-btn" onclick="filterCity('spb')">Санкт-Петербург</button>
+            <button class="tab-btn" onclick="filterCity('prip')">Припять</button>
+        </div>
+
+        <!-- Сетка с карточками локаций -->
+        <div class="places-grid">
+            
+            <!-- Карточка 1 -->
+            <div class="place-card moscow">
+                <div class="place-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="place-info">
+                    <span class="badge">Москва</span>
+                    <h3>Заброшенный Ховринский госпиталь</h3>
+                    <p>Легендарный недострой, ставший культовым местом для сталкеров. (Демонтирован, но остался в истории).</p>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="place-card spb">
+                <div class="place-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="place-info">
+                    <span class="badge">Санкт-Петербург</span>
+                    <h3>Усадьба Демидова</h3>
+                    <p>Старинное поместье с уникальной деревянной архитектурой и разрушающимися колоннами.</p>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="place-card prip">
+                <div class="place-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="place-info">
+                    <span class="badge">Припять</span>
+                    <h3>Парк аттракционов</h3>
+                    <p>Знаменитое колесо обозрения, которое так и не успело официально открыться до аварии на ЧАЭС.</p>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="place-card moscow">
+                <div class="place-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="place-info">
+                    <span class="badge">Москва</span>
+                    <h3>Завод ЗИЛ (Старые цеха)</h3>
+                    <p>Остатки индустриального гиганта прошлого века, хранящие дух советской эпохи.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2026 UrbexExplore. Будьте осторожны при посещении подобных объектов.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
